@@ -1,2 +1,2 @@
 # TAL-BACK-TO-HANYANG
-TAL NFT의 소개 페이지입니다.
+React를 활용한 TAL NFT의 소개 페이지입니다.
