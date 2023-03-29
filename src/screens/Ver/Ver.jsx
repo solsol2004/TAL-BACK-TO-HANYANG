@@ -266,7 +266,30 @@ export const Ver = () => {
             <img className={"ver-list-card"} src={"/img/list-card.svg"} />
           </div>
         </div>
-      </div>
+      </div> 
+        <div ref={secondTab} className={"ver-MAP"}>
+          <div
+            className={"ver-overlap-group-3"}
+            style={{
+              backgroundImage: "url(/img/background-2.png)",
+            }}
+          >
+            <div className={"ver-tittle-2"}>
+              <div ref={secondTab} className={"ver-text-wrapper-7"}>HANYANG MAP OVERVIEW</div>
+              <div className={"ver-subtittle-and-btn"}>
+                <p
+                  className={
+                    "ver-four-unique-tals-are-waiting-for-you-to-tell-your-story-and-showcase-your-identity-choose-from-a-variety-of-tals-and-find-the-perfect-match-to-represent-you"
+                  }
+                >
+                  This is the overview of HANYANG Map! <br />
+                  Make sure you check it out
+                </p>
+              </div>
+            </div>
+            <img className={"ver-list-card"} src={"/img/list-card.svg"} />
+          </div>
+        </div>
       <div ref={thirdTab} className={"ver-TAL-SYMBOL"}>
         <div className={"ver-overlap-group4"}>
           <img className={"ver-background-3"} src={"/img/background-3.png"} />
