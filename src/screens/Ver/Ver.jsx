@@ -12,7 +12,10 @@ export const Ver = () => {
   const secondTab = useRef(null);
   const thirdTab = useRef(null);
   const fourthTab = useRef(null);
-  
+  const fifthTab = useRef(null);
+
+
+
 
   const goToRef = (ref) => {
     setTimeout(() => {
@@ -242,7 +245,7 @@ export const Ver = () => {
         </div>
       </div>
       <div className={"ver-group"}>
-        <div ref={secondTab} className={"ver-TAL-TICKET"}>
+        <div className={"ver-TAL-TICKET"}>
           <div
             className={"ver-overlap-group-3"}
             style={{
@@ -267,7 +270,7 @@ export const Ver = () => {
           </div>
         </div>
       </div> 
-        <div ref={secondTab} className={"ver-MAP"}>
+        <div className={"ver-MAP"}>
           <div
             className={"ver-overlap-group-3"}
             style={{
@@ -275,7 +278,7 @@ export const Ver = () => {
             }}
           >
             <div className={"ver-tittle-2"}>
-              <div ref={secondTab} className={"ver-text-wrapper-7"}>HANYANG MAP OVERVIEW</div>
+              <div ref={thirdTab} className={"ver-text-wrapper-7"}>HANYANG MAP OVERVIEW</div>
               <div className={"ver-subtittle-and-btn"}>
                 <p
                   className={
@@ -290,7 +293,7 @@ export const Ver = () => {
             <img className={"ver-list-card"} src={"/img/list-card.svg"} />
           </div>
         </div>
-      <div ref={thirdTab} className={"ver-TAL-SYMBOL"}>
+      <div ref={fourthTab} className={"ver-TAL-SYMBOL"}>
         <div className={"ver-overlap-group4"}>
           <img className={"ver-background-3"} src={"/img/background-3.png"} />
           <div className={"ver-view"}>
@@ -373,7 +376,7 @@ export const Ver = () => {
           </div>
         </div>
       </div>
-      <div ref={fourthTab} className={"ver-FAQ"}>
+      <div ref={fifthTab} className={"ver-FAQ"}>
         <div
           className={"ver-overlap-group5"}
           style={{
