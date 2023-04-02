@@ -1,0 +1,72 @@
+.card-populer {
+  color: #d9ffde;
+  background-color: #0d1714;
+  border: .786455px solid;
+  border-radius: 23.5937px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 22.0208px;
+  padding: 12.5833px;
+  font-family: Be Vietnam Pro, Arial;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  width: 23%;
+  height: 55%;
+}
+
+.image-card {
+  width: 296px;
+  height: 285px;
+  object-fit: cover;
+}
+
+.content {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.name-and-price {
+  flex-direction: column;
+  row-gap: 6.29164px;
+  display: flex;
+}
+
+.monkey {
+  margin: 6px 60px 11px 1px;
+  font-size: 1.5rem;
+  line-height: 34px;
+}
+
+.num-043-eth {
+  margin-bottom: 4px;
+  margin-left: 1px;
+  margin-right: 9px;
+  font-weight: 400;
+}
+
+.button-buy {
+  color: #080e0c;
+  background: linear-gradient(43.7deg, #0baa1b 0%, #a6fc71 100%);
+  border: none;
+  border-radius: 0 7.86455px;
+  justify-content: center;
+  align-items: right;
+  margin-left: auto; 
+  margin-right: 0;
+  column-gap: 7.86455px;
+  margin-top: 1px;
+  padding: 9.43747px 10px;
+  font-family: Be Vietnam Pro, Arial;
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: flex;
+}
+
+.buy-ticket {
+  margin-top: 6px;
+  margin-bottom: 3px;
+  margin-left: 2px;
+}

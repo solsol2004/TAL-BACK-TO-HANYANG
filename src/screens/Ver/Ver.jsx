@@ -4,6 +4,12 @@ import { Twitter } from "../../components/Twitter";
 import { Discord } from "../../components/Discord";
 import "./style.css";
 
+import num4 from "../../../static/img/ticket2.png"
+import num6 from "../../../static/img/ticket3.png";
+import num8 from "../../../static/img/ticket4.png";
+import num2 from "../../../static/img/num1.png";
+import CardPopuler from "../../components/CardPopuler";
+
 
 
 export const Ver = () => {
@@ -12,10 +18,7 @@ export const Ver = () => {
   const secondTab = useRef(null);
   const thirdTab = useRef(null);
   const fourthTab = useRef(null);
-  const fifthTab = useRef(null);
-
-
-
+  
 
   const goToRef = (ref) => {
     setTimeout(() => {
@@ -27,6 +30,33 @@ export const Ver = () => {
   
   const buyNow = () => {
     window.location.href = "https://opensea.io/";
+  };
+
+  const propsData = {
+    cardPopuler: {
+      num043Eth: "0.980ETH",
+      num: num2,
+      buyTicket: "Buy Now",
+      monkey: "SAJA",
+    },
+    cardPopuler1: {
+      num043Eth: "0.980ETH",
+      num: num4,
+      monkey: "YANGBAN",
+      buyTicket: "Buy Now",
+    },
+    cardPopuler2: {
+      buyTicket: "Buy Now",
+      num043Eth: "0.343ETH",
+      monkey: "GAKSI",
+      num: num6,
+    },
+    cardPopuler3: {
+      monkey: "CHORANGI",
+      buyTicket: "Buy Now",
+      num: num8,
+      num043Eth: "0.43ETH",
+    },
   };
 
 
@@ -245,7 +275,7 @@ export const Ver = () => {
         </div>
       </div>
       <div className={"ver-group"}>
-        <div className={"ver-TAL-TICKET"}>
+        <div ref={secondTab} className={"ver-TAL-TICKET"}>
           <div
             className={"ver-overlap-group-3"}
             style={{
@@ -266,34 +296,16 @@ export const Ver = () => {
                 <div className={"ver-text-wrapper-9"} onClick = {buyNow}>EXPLORE NOW</div>
               </div>
             </div>
-            <img className={"ver-list-card"} src={"/img/list-card.svg"} />
+            <div className="ver-list-card">
+              <CardPopuler {...propsData.cardPopuler} />
+              <CardPopuler {...propsData.cardPopuler1} />
+              <CardPopuler {...propsData.cardPopuler2} />
+             <CardPopuler {...propsData.cardPopuler3} />
+          </div>
           </div>
         </div>
       </div> 
-        <div className={"ver-MAP"}>
-          <div
-            className={"ver-overlap-group-3"}
-            style={{
-              backgroundImage: "url(/img/background-2.png)",
-            }}
-          >
-            <div className={"ver-tittle-2"}>
-              <div ref={thirdTab} className={"ver-text-wrapper-7"}>HANYANG MAP OVERVIEW</div>
-              <div className={"ver-subtittle-and-btn"}>
-                <p
-                  className={
-                    "ver-four-unique-tals-are-waiting-for-you-to-tell-your-story-and-showcase-your-identity-choose-from-a-variety-of-tals-and-find-the-perfect-match-to-represent-you"
-                  }
-                >
-                  This is the overview of HANYANG Map! <br />
-                  Make sure you check it out
-                </p>
-              </div>
-            </div>
-            <img className={"ver-list-card"} src={"/img/list-card.svg"} />
-          </div>
-        </div>
-      <div ref={fourthTab} className={"ver-TAL-SYMBOL"}>
+      <div ref={thirdTab} className={"ver-TAL-SYMBOL"}>
         <div className={"ver-overlap-group4"}>
           <img className={"ver-background-3"} src={"/img/background-3.png"} />
           <div className={"ver-view"}>
@@ -376,7 +388,7 @@ export const Ver = () => {
           </div>
         </div>
       </div>
-      <div ref={fifthTab} className={"ver-FAQ"}>
+      <div ref={fourthTab} className={"ver-FAQ"}>
         <div
           className={"ver-overlap-group5"}
           style={{
