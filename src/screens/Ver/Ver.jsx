@@ -7,7 +7,7 @@ import "./style.css";
 import num4 from "../../../static/img/ticket2.png"
 import num6 from "../../../static/img/ticket3.png";
 import num8 from "../../../static/img/ticket4.png";
-import num2 from "../../../static/img/num1.png";
+import num2 from "../../../static/img/ticket1.png";
 import CardPopuler from "../../components/CardPopuler";
 
 

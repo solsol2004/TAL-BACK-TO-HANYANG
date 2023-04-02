@@ -13,7 +13,7 @@
   font-weight: 700;
   line-height: 24px;
   width: 23%;
-  height: 55%;
+  height: 53%;
 }
 
 .image-card {
@@ -30,12 +30,12 @@
 
 .name-and-price {
   flex-direction: column;
-  row-gap: 6.29164px;
+  row-gap: 7px;
   display: flex;
 }
 
 .monkey {
-  margin: 6px 60px 11px 1px;
+  margin: 8px 60px 0px 1px;
   font-size: 1.5rem;
   line-height: 34px;
 }
@@ -58,11 +58,12 @@
   margin-right: 0;
   column-gap: 7.86455px;
   margin-top: 1px;
-  padding: 9.43747px 10px;
+  padding: 9.43747px 11px;
   font-family: Be Vietnam Pro, Arial;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 500;
   display: flex;
+  cursor: pointer;
 }
 
 .buy-ticket {

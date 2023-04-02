@@ -1,6 +1,11 @@
 import * as React from "react";
 import "./CardPopuler.css";
 import imageCard from "../../static/img/imageCard.svg";
+
+const buyNow = () => {
+  window.location.href = "https://opensea.io/";
+};
+
 const CardPopuler = (props) => {
   return (
     <div className={`card-populer ${props.className || ""}`}>
@@ -10,7 +15,7 @@ const CardPopuler = (props) => {
           <span className="monkey">{props.monkey || "SAJA"}</span>
           <span className="num-043-eth">{props.num043Eth || "0.980ETH"}</span>
         </div>
-        <button className="button-buy">
+        <button className="button-buy" onClick = {buyNow}>
           <span className="buy-ticket">{props.buyTicket || "Buy Ticket"}</span>
         </button>
       </div>
